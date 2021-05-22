@@ -1,0 +1,23 @@
+e 0 end1 end2 idle1 idle2
+e 1 req1 end2 idle2
+e 2 req2 end1 idle1
+e 3 req1 req2
+e 4 cs1 idle2
+e 5 cs2 idle1
+e 6 req2 cs1
+e 7 req1 cs2
+t 0 1
+t 0 2
+t 1 3
+t 1 4
+t 2 3
+t 2 5
+t 3 6
+t 3 7
+t 4 0
+t 4 6
+t 5 0
+t 5 7
+t 6 2
+t 7 1
+f and idle1 and end1 end2
